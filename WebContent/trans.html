@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	img{
+		width: 300px;
+		height: 300px;
+	
+	}
+	
+	div#translate{
+		display: inline-block;
+		border: 1px solid#222;
+		position: absolute;
+		width: 800 px;
+		top: 500px;
+	
+	}
+	
+	
+	div#translate:hover {
+		transform: translateX(50px);
+	
+	}
+	
+	#translate img:hover {
+/* 		transform: translateX(50px); */
+/* 		transform: translateY(50px); */
+		transform: translate(-50px, -50px);
+	}
+	
+	div#scale{
+		display: inline-block;
+		border: 1px solid #222;
+		transition-property: transform;
+		transition-duration: 3s;
+	}
+	#scale img:hover {
+		transform: scaleX(1.5);
+		transform: scale(1.5);
+		transform: scale(0.8);
+	}
+	
+	div#rotate{
+		display: block;
+		border: 1px solid #222;
+		perspective: 200px;
+	}
+	#rotate img:hover {
+		transform: rotate(40deg);
+		transform: scale(1.5);
+		transform: scale(0.8);
+		transition-property: transform;
+		transition-duration: 3s;
+		/*  		transform: translateX(50px);  */
+/*  		transform: translateY(50px);  */
+/* 		transform: rotateY(40deg)  */
+/* /* 					y축변경 */ */
+/*  		transform: rotateX(40deg)  */
+/* 					x축  */
+	
+	}
+	
+
+
+	
+	
+	#translate img:hover {
+		transition-property: transform;
+		transition-duration: 3s;
+	}
+	
+	
+</style>
+
+</head>
+<body>
+<!-- 	<div id="translate"> -->
+<!-- 	 	<img src="img/2.jpg" alt="고양이"> -->
+<!-- 	</div> -->
+	
+	<div id="scale">
+	 	<img src="img/1.jpg" alt="배경">
+	</div>
+	
+	<div id="rotate">
+	 	<img src="img/3.jpg" alt="배경">
+	</div>
+	
+	
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+/* 	link, */
+/* 	visited , */
+/* 	active */
+/* 	hover */
+	a{
+		display:table-cell;
+		width: 600px;
+		font-size: 40px;
+		height: 100px;
+		border: 1px solid #222;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	
+	
+	a:link{
+		color: black;
+		text-decoration: none;
+	
+	}
+	
+	a:visited{ /* 방문한곳 변경값넣기 */
+		color: black;
+		text-decoration:none;
+		
+	}
+	
+	a:hover{
+		color:white;
+		background-color: #222;
+		font-size: 10px;
+	
+	}
+	
+	a:active{
+		color:red;
+		background-color:yellow;
+	}
+	
+	a:focus{
+		color: blue;
+	
+	
+	}
+	
+	input[type="text"]{
+		background-color: #DDE7E4;
+	}
+	
+	input[type="text"]:focus{
+		background-color: white;
+	}
+	
+	
+	input[type="password"]:enabled{
+		background-color: #DDE7E4;
+	}
+	
+	input[type="password"]:disabled{
+		background-color: black;
+	}
+	
+	label[type="checkbox"]:checked{
+/* 		border:1px solid #222; */
+		color: red;
+	}
+	
+	div:nth-child(2n+1){
+/* 				2개중에 1개 */
+/* 				마지막껄로할려면  */
+/* 				nth-last-child */
+		background-color: black;
+		color: white;
+	}
+	
+	#menu ul {
+	 	list-style-type: none;
+	 	color: white;
+	 	margin:0;
+	}
+
+	#menu ul li{
+		float: left;
+		padding: 10px;
+		background-color: #424242;
+		border-right: 1px solid white;
+/* 		상자만들기 */
+	}
+	
+	#menu ul li:last-child{
+		border-right-style: none;
+		
+		
+	}
+	
+	#menu ul li:hover{
+	background-color: Purple;
+	color: green;
+		 }
+		 
+		 
+		 
+		 
+		 
+		
+		
+		
+		
+
+</style>
+</head>
+<body>
+	<a href="#">가상클래스 테스트</a><br>
+	focus테스트: <input type="text"><br>
+	en,dis 테스트: <input type="password" disabled> <br>
+	
+	
+	checked 테스트:
+	<label><input type="checkbox" name="a"> 체크1</label>
+	<label><input type="checkbox" name="a"> 체크2</label>
+	
+	<div>box1</div>
+	<div>box2</div>
+	<div>box3</div>
+	<div>box4</div>
+	<div>box5</div>
+	<div>box6</div>
+
+
+	<div id="menu">
+		<ul>
+			<li><a href="#">메뉴1</a></li>
+			<li><a href="#">메뉴2</li>
+			<li><a href="#">메뉴3</li>
+		</ul>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+		*{
+			font-family: 'Gugi', 굴림;
+			margin:0;
+			padding:0;
+		}
+		body {
+			font-size: 16px;
+		}
+		h1{
+			text-align: center;
+			font-size: 3em;
+			padding: 20px 0;
+		}
+		.bg-black{
+			background-color: #2E2E2E;
+			color:white;
+		
+		}
+		.bg-white{
+			background-color: #FAF6EA;
+			color: black;
+		}
+		.font16{
+			font-size: 16px;
+		}
+		
+		/*메인 매뉴*/
+		nav#main-menu ul, nav#myinfo-menu ul{
+			list-style-type:none;
+		}
+		
+		nav#main-menu ul li{
+			float: right;
+		}
+		
+		nav#main-menu ul li a{
+			text-decoration: none;
+			padding: 0 5px;
+			margin-bottom: 2px;
+			color: #F01F72;
+		}
+		
+		nav#myinfo-menu{
+			height: 50px;
+			line-height: 50px;
+		}
+		
+		nav#myinfo-menu ul{
+			width: 720px;
+			margin: 0 auto;
+		}
+		
+		nav#myinfo-menu ul li{
+			float: left;
+		}
+		
+		nav#myinfo-menu ul li a{
+			display : inline-block;
+			text-decoration: none;
+			padding: 0 20px;
+			color: gray;
+			width: 200px;
+			font-size: 22px;
+			text-align: center;
+		}
+		
+		nav#myinfo-menu ul li a:hover{
+			color: white;
+			background: #77DEF6;
+		}
+		
+		
+		#my{
+			position: relative;
+			height: 300px;
+			clear:right;
+		}
+		
+		#my img{
+			position : absolute;
+			top: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			width:300px;
+			height: 200px;
+			border-radius: 20px;
+			box-shadow: 2px 2px 2px black;
+			 
+		}
+		
+		#my span{
+			display:block;
+			color: white;
+			font-size: 22px;
+			text-shadow: 2px 2px 2px black;
+		}
+		#my div{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			transform: translateX(-60%);
+		}
+		
+		#whoami{
+			height: 400px;
+			
+		}
+		#whoami p{
+			display: block;
+			width: 70%;
+			margin: 20px auto;
+			border: 1px solid #CEC939;
+			background-color: white;
+			border-radius: 5px;
+			color: black;
+			padding:10px;
+/* 			margin : 20px 0px; */
+			
+		}
+		
+		
+		#iam > div {
+ 			width: 70%;
+			margin: 0 auto;
+		}
+		
+		#iam > div > div{
+			display: inline-block;
+ 			width: 100px; 
+ 			height: 100px; 
+/* 			margin: 10px; */
+			border: 1px solid #222;
+			
+		}
+		
+		
+		
+		#iam >div >div#img-box1{
+			width: 100px; 
+ 			height: 100px;
+			background-image: url('img/라이언.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		#iam >div >div#img-box2{
+			background-image: url('img/자몽.jpg');
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+		}
+		
+		
+		#about-me > div{
+			box-sizing: border-box;
+			width: 80%;
+/* 			border: 1px solid black; */
+			margin: 0 auto;
+			padding-bottom: 30px;
+		}
+		
+		#about-me > div > div {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 25%;
+			text-align: center;
+			margin-left: -4px;
+			
+		}
+		
+		#about-me img {
+			box-sizing: border-box;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-bottom: 20px;
+			border:2px solid black;
+			background-color: white;
+			
+		}
+		#about-me span{
+			display: block;
+			padding-bottom: 10px;
+		}
+		#about-me h4 {
+			margin-bottom: 20px;
+			font-size: 22px;
+			color: yellow;
+		}
+		#footer div{
+			width: 450px;
+			margin: 0 auto;
+		}
+		
+		#footer img{
+			float: left;
+			padding-right: 10px;
+			border-radius: 10px;
+		}
+		
+		#footer p {
+			line-height: 50px;
+		
+		}
+		
+		header h1:hover {
+			color: hotpink;
+		}
+		
+		#my img:hover{
+			border:2px solid green;
+		}
+		
+		
+		
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>MY PAGE</h1>
+		<nav id="main-menu">
+			<ul>
+				<li><a href="my-project.html">Project</a></li>
+				<li><a href="#">My info</a></li>
+			</ul>
+		</nav>
+		<div class="bg-black font16" id="my">
+			<img src="img/my-img.jpg" alt="나의 이미지" >
+			<div>
+				<span>본캐 : 윤영민</span>
+				<span>부캐 : 윤쌤</span>
+			</div>
+		</div>
+	</header>
+	<nav id="myinfo-menu" class="bg-white">
+		<ul>
+			<li><a href="#menu1">Who am i?</a></li>
+			<li><a href="#menu2">나는 이런사람입니다</a></li>
+			<li><a href="#menu3">About Me</a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<div class="bg-black" id="whoami">
+			<h1 id="menu1">Who am i?</h1>
+			<p>프런트엔트 웹 기술(Front-end Web Tech.)에 괌심이 많습니다.<br>
+			현재 제주의 한 시골 마을에서 코딩 중입니다.
+			</p>
+			<p>
+				저는 한국정보기술연구원에서 웹 개발 강의를 진행하고 있습니다.				
+			</p>
+			<p>
+				프론트엔드, 백엔드, 풀스택 개발을 강의합니다.
+			</p>
+			
+		</div>
+		<div class="bg-white" id="iam">
+			<h1 id="menu2">나는 이런사람입니다.</h1>
+			<div>
+				<div id="img-box1"></div>
+				<div>a</div>
+			</div>
+			<div>
+				<div></div>
+				<div id="img-box2"></div>
+			</div>
+		</div>
+		<div class="bg-black" id="about-me">
+			<h1 id="menu3">About Me</h1>	
+			<div>	
+				<div>
+					<img src="img/profile.png" alt="profile icon">
+					<h4>PROFILE</h4>
+					<div>
+						<span>내용1</span>
+						<span>내용2</span>
+						<span>내용3</span>
+					</div>
+				</div>
+				<div>
+					<img src="img/career.png" alt="career icon">
+					<h4>CAREER</h4>
+					<div>
+						<span>내용1</span>
+						<span>내용2</span>
+						<span>내용3</span>
+					</div>
+				</div>
+				<div>
+					<img src="img/interesting.png" alt="interesting icon">
+					<h4>INTERESTING</h4>
+					<div>
+						<span>내용1</span>
+						<span>내용2</span>
+						<span>내용3</span>
+					</div>
+				</div>
+				<div>
+					<img src="img/goal.png" alt="goal icon">
+					<h4>GOAL</h4>
+					<div>
+						<span>내용1</span>
+						<span>내용2</span>
+						<span>내용3</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="bg-white" id="footer">
+			<div>
+				<img src="img/kitri_logo_Ko2.jpg" alt="키트리로고" width="80px">
+				<p>
+				Copyright(C) 2021. YYM, All rights reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
